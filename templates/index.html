@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Traffic Data Dashboard</title>
+</head>
+<body>
+    <h1>Traffic Data Dashboard</h1>
+    <form action="/dashboard" method="post">
+        <label for="time_of_day">Select Time of Day:</label>
+        <select id="time_of_day" name="time_of_day">
+            <option value="Morning">Morning</option>
+            <option value="Afternoon">Afternoon</option>
+            <option value="Evening">Evening</option>
+            <option value="Night">Night</option>
+        </select>
+        <br>
+        <label for="date">Select Date:</label>
+        <input type="date" id="date" name="date">
+        <br>
+        <input type="submit" value="Submit">
+    </form>
+</body>
+</html>
