@@ -7,8 +7,6 @@ app = Flask(__name__)
 # Load the traffic data
 traffic_data = pd.read_csv('traffic_data.csv')
 
-
-
 @app.route('/')
 def index():
     return render_template('index.html')
